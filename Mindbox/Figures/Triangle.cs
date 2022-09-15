@@ -4,11 +4,32 @@
     using System;
     using static System.Math;
 
-    public class Triangle : BaseFigure {
+    /// <summary>
+    /// Выполняет расчета для треугольника.
+    /// </summary>
+    public class Triangle : BaseFigure 
+    {
+        /// <summary>
+        /// Первая сторона.
+        /// </summary>
         private readonly double _firstSide;
+        
+        /// <summary>
+        /// Вторая сторона.
+        /// </summary>
         private readonly double _secondSide;
+        
+        /// <summary>
+        /// Третья сторона.
+        /// </summary>
         private readonly double _thirdSide;
 
+        /// <summary>
+        /// Инициализирует новый экземпляр класса <see cref="Triangle" />.
+        /// </summary>
+        /// <param name="firstSide">Первая сторона.</param>
+        /// <param name="secondSide">Вторая сторона.</param>
+        /// <param name="thirdSide">Третья сторона.</param>
         public Triangle(double firstSide, double secondSide, double thirdSide) : base()
         {
             if (firstSide + secondSide < thirdSide || firstSide + thirdSide < secondSide || secondSide + thirdSide < secondSide)
@@ -23,6 +44,7 @@
             _thirdSide = thirdSide;
         }
 
+        /// <inheritdoc/>
         public override double СalculateArea()
         {
             var p = (_firstSide + _secondSide + _thirdSide) / 2;
@@ -30,6 +52,10 @@
             return s;
         }
 
+        /// <summary>
+        /// Проверяет, является ли триугольник прямоугольынм.
+        /// </summary>
+        /// <returns>Является ли триугольник прямоугольынм</returns>
         public bool IsRightTriangle()
         {
             var max = Max(_firstSide, Max(_secondSide, _thirdSide));
