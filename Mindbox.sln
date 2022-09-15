@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindbox", "Mindbox\Mindbox.csproj", "{A5239BDE-B8C2-446A-86D8-3B8266400E9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindbox.Test", "Mindbox.Test\Mindbox.Test.csproj", "{E36A5BDB-A23A-4B27-BAD5-07050AECFD10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5239BDE-B8C2-446A-86D8-3B8266400E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5239BDE-B8C2-446A-86D8-3B8266400E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5239BDE-B8C2-446A-86D8-3B8266400E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5239BDE-B8C2-446A-86D8-3B8266400E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E36A5BDB-A23A-4B27-BAD5-07050AECFD10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E36A5BDB-A23A-4B27-BAD5-07050AECFD10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E36A5BDB-A23A-4B27-BAD5-07050AECFD10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E36A5BDB-A23A-4B27-BAD5-07050AECFD10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
