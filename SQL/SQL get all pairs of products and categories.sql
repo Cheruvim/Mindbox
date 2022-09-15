@@ -1,8 +1,8 @@
 SELECT
   Product.Name,
   Cats.CatName
-FROM Linker
-JOIN Product
-  ON Linker.ProdId = Product.Id
-JOIN Cats
+FROM Product
+left JOIN Linker
+  ON Product.Id = Linker.ProdId
+left JOIN Cats
   ON Linker.CatId = Cats.Id;
